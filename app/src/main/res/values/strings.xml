@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">KY Mobile</string>
+    <string name="login">login</string>
+    <string name="register">register</string>
+    <string name="welcome">Hi there,</string>
+    <string name="todo">TODO</string>
+    <string name="sign_up">sign up</string>
+    <string name="screeno">screeno</string>
+    <string name="register_account">Sign Up To Continue</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="batch">Batch</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="already_have_an_account_login">Already Have An Account? Login</string>
+    <string name="login_to_your_account">Login To Your Account</string>
+    <string name="don_t_have_an_account_register">Don\'t Have An Account? Register</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="profile">Profile</string>
+    <string name="notifications">Notifications</string>
+    <string name="student">Student</string>
+    <string name="events">Events</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="calendar">Calendar</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="img">IMG</string>
+    <string name="enter_event_title">Enter Event Title</string>
+    <string name="describe_your_event">Describe Your Event!</string>
+    <string name="when_is_it_taking_place">When Is It Taking Place?</string>
+    <string name="time">Time</string>
+    <string name="venue">Venue</string>
+    <string name="briefly_describe_the_event">Briefly Describe The Event!</string>
+    <string name="date">Date</string>
+    <string name="submit">Submit!</string>
+    <string name="ky_events">KY EVENTS!</string>
+    <string name="login_or_sign_up_to_continue">KY Mobile</string>
+    <string name="add_new_event">Add New Event</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="additional_information">Additional Information</string>
+    <string name="full_description">Full Description</string>
+    <string name="upcoming_events">Upcoming Events!</string>
+    <string name="home">Home</string>
+    <string name="notices">Notices</string>
+    <string name="saved_events">Saved Events</string>
+    <string name="add_new_notice">Add New Notice</string>
+    <string name="title">Title</string>
+    <string name="body">Body</string>
+    <string name="exco">Exco</string>
+
+    <string name="welfare">Student Welfare</string>
+    <string name="president">President</string>
+    <string name="sports">Sports</string>
+    <string name="academic">Academic</string>
+    <string name="religious">Religious</string>
+    <string name="food">Food</string>
+    <string name="special_task">Special Task</string>
+    <string name="general">General</string>
+    <string name="category">Category</string>
+    <string name="sc_announcements">SC Announcements</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="enter_your_full_name">Enter Your Nickname</string>
+    <string name="enter_your_id">Enter Your ID</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="greetings">Greetings</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="homepage">Homepage</string>
+    <string name="book_bicycles">Book Bicycles</string>
+    <string name="peer_tutoring">Peer Tutoring</string>
+    <string name="student_resource">Student Resource</string>
+    <string name="feedback">Feedback</string>
+    <string name="timetable">Timetable</string>
+
+
+</resources>

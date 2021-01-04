@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "157924316818",
+    "firebase_url": "https://ky-mobile.firebaseio.com",
+    "project_id": "ky-mobile",
+    "storage_bucket": "ky-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157924316818:android:c7daa437dff22c8fb2384b",
+        "android_client_info": {
+          "package_name": "com.example.kymobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157924316818-ogor7u8e7f06ha1teccn56tcpggn9iah.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kymobile",
+            "certificate_hash": "a7e8450f06f94341e096eb94ad840ea858827ef2"
+          }
+        },
+        {
+          "client_id": "157924316818-rgtqo08tp5pcvofn4tgpn23vm1m7p0r7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKrwDqd-y_U6dRyj5dgSiuTlTk3ahTCM4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157924316818-rgtqo08tp5pcvofn4tgpn23vm1m7p0r7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

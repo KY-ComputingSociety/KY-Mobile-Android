@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEventActivity"
+    android:background="@color/colorLightBlue"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="40dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_new_event"
+                android:textSize="25sp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:cardCornerRadius="40dp"
+                app:cardBackgroundColor="@color/colorLightBlue"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                >
+                <ImageView
+                    android:id="@+id/event_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="200dp"
+                    android:scaleType="centerCrop"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <EditText
+                android:id="@+id/event_title"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_event_title"
+                android:singleLine="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:textSize="15sp"
+                android:maxLength="35"
+                />
+
+            <EditText
+                android:id="@+id/event_desc_short"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/briefly_describe_the_event"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="80"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:id="@+id/event_desc_full"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/additional_information"
+                android:inputType="textCapSentences|textMultiLine"
+                android:singleLine="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:maxLength="1000"
+                android:textSize="15sp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.santalu.maskedittext.MaskEditText
+                    android:id="@+id/event_date"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/start_date"
+                    android:singleLine="true"
+                    android:inputType="date"
+                    app:met_mask="##/##/####"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    />
+                <com.santalu.maskedittext.MaskEditText
+                    android:id="@+id/event_date_end"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/end_date"
+                    android:singleLine="true"
+                    android:inputType="date"
+                    app:met_mask="##/##/####"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="25dp"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.santalu.maskedittext.MaskEditText
+                    android:id="@+id/event_time"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/start_time"
+                    android:singleLine="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="15sp"
+                    android:inputType="time"
+                    app:met_mask="##:##"
+                    />
+                <com.santalu.maskedittext.MaskEditText
+                    android:id="@+id/event_time_end"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/end_time"
+                    android:singleLine="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="25dp"
+                    android:textSize="15sp"
+                    android:inputType="time"
+                    app:met_mask="##:##"
+                    />
+            </LinearLayout>
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/event_venue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/venue"
+                android:inputType=""
+                android:singleLine="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:textSize="15sp"
+
+                />
+
+            <Button
+                android:id="@+id/event_submit"
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:background="@drawable/roundedbutton"
+                android:textColor="@color/colorWhite"
+                android:layout_marginRight="70dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginBottom="15dp"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.core.widget.NestedScrollView>

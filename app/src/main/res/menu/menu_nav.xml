@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cnb_unselectedColor = "#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <item android:id="@+id/nav_student"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"
+        app:cnb_backgroundColor = "#99CDE0F9"
+        app:cnb_iconColor ="#217df5"
+        app:cnb_textColor = "#217df5"
+        />
+
+    <item android:id="@+id/nav_cal"
+        android:title="@string/events"
+        android:icon="@drawable/ic_calendar"
+        app:cnb_backgroundColor = "#99CDE0F9"
+        app:cnb_iconColor ="#217df5"
+        app:cnb_textColor = "#217df5"
+        />
+
+    <item android:id="@+id/nav_notification"
+        android:title="@string/notices"
+        android:icon="@drawable/ic_notifications"
+        app:cnb_backgroundColor = "#99CDE0F9"
+        app:cnb_iconColor ="#217df5"
+        app:cnb_textColor = "#217df5"
+        />
+
+
+
+
+
+    <item android:id="@+id/nav_profile"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_person"
+        app:cnb_backgroundColor = "#99CDE0F9"
+        app:cnb_iconColor ="#217df5"
+        app:cnb_textColor = "#217df5"
+
+        />
+
+</menu>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="#f1f1f1"
+    >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back"
+        android:textSize="35sp"
+        android:layout_marginTop="230dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/colorBlack"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In To Continue"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/mayl"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="42dp"
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:hint="@string/email_address"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/lowk"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="42dp"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/login_to_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        style = '@style/Widget.AppCompat.Button.Colored'
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:background="@drawable/white_button"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        />
+
+
+        <TextView
+            android:id="@+id/recover_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textColor="#0091fe"
+
+            />
+
+    <TextView
+        android:id="@+id/no_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/don_t_have_an_account_register"
+        android:textColor="#0091fe"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+</LinearLayout>

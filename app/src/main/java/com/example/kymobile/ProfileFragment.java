@@ -476,8 +476,8 @@ public class ProfileFragment extends Fragment {
         //show progress dialog
         pd.show();
         //path and image name to store in firebase database
-        String time = String.valueOf(System.currentTimeMillis());
-        String filePathAndName = storagePath+ time+"_"+user.getDisplayName();
+
+        String filePathAndName = storagePath+ user.getUid();
 
         StorageReference storageReference2 = storageReference.child(filePathAndName);
         storageReference2.putFile(uri)

@@ -147,8 +147,9 @@ public class AddEventActivity extends AppCompatActivity {
         pd.show();
         //time stamp
         final String timeStamp = String.valueOf(System.currentTimeMillis());
-        //event path
-        String path = "Events/"+"EventCovers_"+timeStamp;
+        //event path\
+        UUID uuid = UUID.randomUUID();
+        String path = "Posts/"+uuid;
 
         if (!uri.equals("NoCover")){
             //posting with image
@@ -176,16 +177,16 @@ public class AddEventActivity extends AppCompatActivity {
                         hashMap.put("Venue",venue);
                         hashMap.put("TimeStamp",timeStamp);
                         hashMap.put("Cover", downloadedUri);
+                        UUID uuid = UUID.randomUUID();
 
-
-                        String Document = timeStamp+"_"+title.replaceAll("\\s+","");
+                        String Document = uuid.toString();
 
 
 
                         //path to post data
                         FirebaseFirestore firebaseFirestore = FirebaseFirestore.getInstance();
                         //posting data
-                        firebaseFirestore.collection("Events").document(Document).set(hashMap)
+                        firebaseFirestore.collection("Posts").document(Document).set(hashMap)
                                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                                     @Override
                                     public void onSuccess(Void aVoid) {
@@ -241,7 +242,7 @@ public class AddEventActivity extends AppCompatActivity {
             //path to post data
             FirebaseFirestore firebaseFirestore = FirebaseFirestore.getInstance();
             //posting data
-            firebaseFirestore.collection("Events").document(timeStamp).set(hashMap)
+            firebaseFirestore.collection("Posts").document(timeStamp).set(hashMap)
                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                 @Override
                 public void onSuccess(Void aVoid) {

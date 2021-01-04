@@ -119,8 +119,8 @@ public class AddNoticeActivity extends AppCompatActivity {
         hashMap.put("Exco",exco);
         hashMap.put("TimeStamp",timeStamp);
 
-
-        String Document = timeStamp+"_"+title.replaceAll("\\s+","");
+        UUID uuid = UUID.randomUUID();
+        String Document = uuid.toString();
 
         //path to post data
         FirebaseFirestore firebaseFirestore = FirebaseFirestore.getInstance();

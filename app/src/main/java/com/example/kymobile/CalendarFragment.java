@@ -92,7 +92,7 @@ public class CalendarFragment extends Fragment {
 
     private void loadPosts() {
         //path of posts
-        final CollectionReference documentReference = FirebaseFirestore.getInstance().collection("Events");
+        final CollectionReference documentReference = FirebaseFirestore.getInstance().collection("Posts");
         //get data from document
         documentReference.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
             @Override

@@ -255,6 +255,8 @@ public class ProfileFragment extends Fragment {
         editText.setHint("Enter New Name");
         linearLayout.addView(editText);
 
+        //comment
+
         builder.setView(linearLayout);
         //button to update new name/batch
         builder.setPositiveButton("Update", new DialogInterface.OnClickListener() {
